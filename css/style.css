@@ -155,3 +155,40 @@ body{
     border-top-right-radius: 40px;
     background: var(--color-w);
 }
+
+#pe1Title{
+    color: var(--color-1);
+    font-family: "AvenirHeavy", sans-serif;
+    margin-top: 2vh;
+    margin-left: 5vw;
+    font-size: 26px;
+}
+
+.optionsGallery{
+    display: flex;
+    overflow-x: auto;
+    border: 1px solid red;
+    width: 90vw;
+    margin-left: 5vw;
+    margin-top: 2vh;
+    padding: 10px;
+}
+.op{
+    width: 100px;
+    height: 140px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid green;
+}
+
+.opImg{
+    width: 60px;
+    height: 60px;
+}
+.opText{
+    color: var(--color-1);
+    font-family: "AvenirHeavy", sans-serif;
+    font-size: 18px;
+}

@@ -147,7 +147,7 @@ body{
 
 
 .panel{
-    position: absolute;
+    position: fixed;
     bottom: 0;
     height: 50vh;
     width: 100%;

@@ -25,12 +25,14 @@
 
 body{
     background: var(--color-1);
+    height: 90vh;
 }
 
 #bgDesign{
     position: absolute;
     top: 0;
     opacity: 0;
+    height: 100vh;
     width: 100vw;
 }
 
@@ -78,8 +80,9 @@ body{
 
 
 
-#invetoIcon{
+#appIcon{
     height: 100%;
+    filter: invert();
 }
 
 #invetoName{
@@ -147,6 +150,7 @@ body{
 
 
 .panel{
+    transition: 1s;
     position: fixed;
     bottom: 0;
     height: 50vh;
@@ -154,6 +158,9 @@ body{
     border-top-left-radius: 40px;
     border-top-right-radius: 40px;
     background: var(--color-w);
+}
+.panel:hover{
+    height: calc(100vh - (14vh));
 }
 
 #pe1Title{
@@ -198,4 +205,79 @@ body{
     color: var(--color-1);
     font-family: "AvenirHeavy", sans-serif;
     font-size: 18px;
+}
+
+
+.TransactionsGallery{
+    display: flex;
+    flex-direction: column;
+    height: 40vh;
+    overflow: hidden;
+    overflow-y: auto;
+    margin-top: 2vh;
+}
+
+
+.t1, .t2{
+    display: grid;
+    grid-template-columns: 60px 60% calc(100% - (60px + 60%));
+    width: 90%;
+    margin-left: 5vw;
+    margin-top: 2vh;
+}
+
+.circle, .circleR{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: var(--color-2);
+}
+.circleR{
+    background-color: var(--color-1);
+    transform: rotate(180deg);
+}
+.mArrow{
+    width: 20px;
+}
+
+.MovImg, .MovTextCont, .MovNumberCont{
+    border: none;
+}
+.MovTextCont{
+    position: relative;
+    margin-left: 10px;
+}
+.MovNumberCont{
+    position: relative;
+    display: flex;
+    justify-content: right;
+}
+.MovImg{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.MovTitle{
+    font-family: "AvenirHeavy", sans-serif;
+    font-size: 20px;
+    color: var(--color-1);
+}
+.MovDescript{
+    position: absolute;
+    bottom: 0;
+    font-family: "AvenirRoman", sans-serif;
+    font-size: 14px;
+    color: var(--color-1);
+}
+
+
+.MovNumber{
+    font-family: "AvenirHeavy", sans-serif;
+    font-size: 20px;
+    color: var(--color-1);
 }

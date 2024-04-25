@@ -1,1 +1,157 @@
 @import url(variables.css);
+
+@font-face {
+    font-family: "AvenirHeavy";
+    src: url(../storage/fonts/avenir/AvenirLTStd-Black.otf);
+}
+@font-face {
+    font-family: "AvenirRoman";
+    src: url(../storage/fonts/avenir/AvenirLTStd-Roman.otf);
+}
+@font-face {
+    font-family: "AvenirBook";
+    src: url(../storage/fonts/avenir/AvenirLTStd-Book.otf);
+}
+@font-face {
+    font-family: "PoppinsRegular";
+    src: url(../storage/fonts/poppins/Poppins-ExtraLight.ttf);
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: var(--color-1);
+}
+
+#bgDesign{
+    position: absolute;
+    top: 0;
+    opacity: 0;
+    width: 100vw;
+}
+
+
+.mainGrid{
+    margin-top: 4vh;
+    margin-left: 5vw;
+    width: 90vw;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.gridElement, .gridElementSpace{
+    border: none;
+}
+.gridElementSpace{
+    margin-bottom: 3vh;
+}
+
+
+#e1{
+    position: relative;
+    display: flex;
+    align-items: center;
+    grid-row: 1;
+    grid-column: 1 / span 2;
+    height: 8vh;
+}
+#e2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    grid-row: 2;
+    grid-column: 1 / span 2;
+    height: 14vh;
+}
+#e3{
+    position: relative;
+    height: 14vh;
+}
+#e4{
+    position: relative;
+    height: 14vh;
+}
+
+
+
+#invetoIcon{
+    height: 100%;
+}
+
+#invetoName{
+    margin-left: 16px;
+    color: var(--color-w);
+    font-family: "AvenirHeavy", sans-serif;
+    font-size: 3.4vh;
+    letter-spacing: 2px;
+}
+#menu{
+    position: absolute;
+    height: 70%;
+    right: 0;
+}
+
+
+#hi{
+    color: var(--color-w);
+    font-family: "AvenirHeavy", sans-serif;
+    font-size: 36px;
+}
+#message{
+    color: var(--color-w);
+    font-family: "PoppinsRegular", sans-serif;
+    font-size: 26px;
+}
+
+
+.infoText{
+    color: var(--color-w);
+    font-family: "PoppinsRegular", sans-serif;
+    font-size: 16px;
+}
+.infoNumber{
+    color: var(--color-w);
+    font-family: "AvenirHeavy", sans-serif;
+    font-size: 20px;
+    margin-bottom: 2vh;
+}
+.simbol{
+    font-size: 12px;
+}
+
+.barEmpty{
+    position: absolute;
+    width: 90%;
+    background-color: #ffffff;
+    height: 8px;
+    border-radius: 40px;
+}
+.bar1{
+    position: absolute;
+    width: 60%;
+    background-color: var(--color-2);
+    height: 8px;
+    border-radius: 40px;
+}
+.bar2{
+    position: absolute;
+    width: 30%;
+    background-color: var(--color-3);
+    height: 8px;
+    border-radius: 40px;
+}
+
+
+.panel{
+    position: absolute;
+    bottom: 0;
+    height: 50vh;
+    width: 100%;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+    background: var(--color-w);
+}

@@ -112,24 +112,32 @@
     display: flex;
     justify-content: center;
 }
+.pigC1:hover{
+    #ellipse{
+        transform: scale(2.8);
+    }
+    #pig{
+        transform: scale(1.3) rotate(6deg);
+    }
+}
+
 .pigC2{
     display: flex;
     flex-direction: column;
 }
 
 #ellipse{
+    z-index: -1;
+    transition: 1s;
     transform: translate(-16px, -30px);
     width: 200px;
 }
 
 #pig{
-    transition: 0.5s;
+    transition: 1s;
     margin-top: 30px;
     width: 100px;
     position: absolute;
-}
-#pig:hover{
-    transform: scale(1.3) rotate(6deg);
 }
 
 #pigTitle{

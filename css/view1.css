@@ -187,7 +187,6 @@
     display: flex;
     overflow: hidden;
     overflow-x: auto;
-    border: 1px solid red;
     width: 90vw;
     margin-top: 2vh;
     padding: 20px;
@@ -198,6 +197,7 @@
     grid-template-columns: repeat(4, 1fr);
 }
 .card{
+    transition: 0.2s;
     position: relative;
     overflow: hidden;
     border-radius: 20px;
@@ -205,9 +205,68 @@
     height: 360px;
     margin-bottom: 200px;
 }
+.card:hover{
+    transform: scale(1.06);
+}
+.cardInfo{
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+}
+.cardTable{
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-top: 36px;
+    margin-left: 30px;
+    width: 40px;
+}
+.cardNumber{
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-top: 36px;
+    margin-right: 30px;
+    font-size: 16px;
+    color: var(--color-w);
+    font-family: "AvenirRoman", sans-serif;
+}
+.cardIcon{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin-bottom: 36px;
+    margin-left: 30px;
+    width: 60px;
+}
+.cardIcon2{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin-bottom: 24px;
+    margin-left: 30px;
+    width: 66px;
+}
+.cardValue{
+    position: absolute;
+    font-size: 32px;
+    color: var(--color-w);
+    font-family: "AvenirHeavy", sans-serif;
+}
+.vSimbol{
+    font-size: 18px;
+    margin-right: 8px;
+}
 .cardBg{
+    animation-name: cardsBg;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
     position: absolute;
     width: 100%;
+    transform: scale(1.2);
 }
 
 
@@ -216,7 +275,7 @@
 }
 
 #c2{
-    background-color: var(--color-3);
+    background-color: var(--color-7);
 }
 
 #c3{
@@ -225,4 +284,17 @@
 
 #c4{
     background-color: var(--color-6);
+}
+
+
+@keyframes cardsBg {
+    0%{
+        transform: scale(1.2) rotate(5deg);
+    }
+    50%{
+        transform: scale(1.6) rotate(-5deg);
+    }
+    100%{
+        transform: scale(1.2) rotate(5deg);
+    }
 }

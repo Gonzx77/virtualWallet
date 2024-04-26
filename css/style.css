@@ -134,15 +134,23 @@ body{
     border-radius: 40px;
 }
 .bar1{
+    animation-delay: 2s;
+    animation-name: barra1;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
     position: absolute;
-    width: 60%;
+    width: 0%;
     background-color: var(--color-2);
     height: 8px;
     border-radius: 40px;
 }
 .bar2{
+    animation-delay: 2s;
+    animation-name: barra2;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
     position: absolute;
-    width: 30%;
+    width: 0%;
     background-color: var(--color-3);
     height: 8px;
     border-radius: 40px;
@@ -218,7 +226,7 @@ body{
 }
 
 
-.t1, .t2{
+.t1{
     display: grid;
     grid-template-columns: 60px 60% calc(100% - (60px + 60%));
     width: 90%;
@@ -280,4 +288,46 @@ body{
     font-family: "AvenirHeavy", sans-serif;
     font-size: 20px;
     color: var(--color-1);
+}
+
+
+
+
+
+.animationBlock{
+    animation-name: block;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    z-index: +1;
+    position: absolute;
+    width: 110px;
+    height: 50px;
+    margin-left: 80px;
+    background-color: var(--color-1);
+}
+
+@keyframes barra1 {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 60%;
+    }
+}
+@keyframes barra2 {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 30%;
+    }
+}
+@keyframes block {
+    0%{
+        margin-left: 80px;
+    }
+    100%{
+        margin-left: 200px;
+        display: none;
+    }
 }

@@ -1,1 +1,168 @@
 @import url(variables.css);
+
+@font-face {
+    font-family: "AvenirHeavy";
+    src: url(../storage/fonts/avenir/AvenirLTStd-Black.otf);
+}
+@font-face {
+    font-family: "AvenirRoman";
+    src: url(../storage/fonts/avenir/AvenirLTStd-Roman.otf);
+}
+@font-face {
+    font-family: "AvenirBook";
+    src: url(../storage/fonts/avenir/AvenirLTStd-Book.otf);
+}
+@font-face {
+    font-family: "PoppinsRegular";
+    src: url(../storage/fonts/poppins/Poppins-ExtraLight.ttf);
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.navigationBar{
+    padding: 10px;
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    bottom: 0;
+    position: absolute;
+    background-color: var(--color-1);
+    width: 100%;
+    height: 10vh;
+}
+
+.navigationOptions{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navigationIcon{
+    transition: 0.2s;
+    width: 40px;
+    height: 40px;
+}
+
+.navigationIcon:hover{
+    transform: translate(0, -1vh);
+}
+
+
+#e1{
+    width: 90vw;
+    margin-top: 4vh;
+    margin-left: 5vw;
+    position: relative;
+    display: flex;
+    align-items: center;
+    grid-row: 1;
+    grid-column: 1 / span 2;
+    height: 8vh;
+}
+#appIcon{
+    height: 100%;
+}
+
+#invetoName{
+    margin-left: 16px;
+    color: var(--color-1);
+    font-family: "AvenirHeavy", sans-serif;
+    font-size: 3.4vh;
+    letter-spacing: 2px;
+}
+#menu{
+    position: absolute;
+    height: 70%;
+    right: 0;
+    filter: invert();
+}
+
+
+.investingCont{
+    height: 30vh;
+    width: 90vw;
+    margin-top: 4vh;
+    margin-left: 5vw;
+}
+
+#subtitle{
+    color: var(--color-1);
+    font-family: "AvenirHeavy", sans-serif;
+    font-size: 26px;
+}
+
+.pigCont{
+    box-shadow: 0px 0px 30px -20px;
+    border-radius: 30px;
+    display: grid;
+    grid-template-columns: 40% 80%;
+    overflow: hidden;
+    width: 320px;
+    height: 140px;
+    margin-top: 2vh;
+}
+.pigC1, .pigC2{
+    border: none;
+}
+.pigC1{
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+.pigC2{
+    display: flex;
+    flex-direction: column;
+}
+
+#ellipse{
+    transform: translate(-16px, -30px);
+    width: 200px;
+}
+
+#pig{
+    transition: 0.5s;
+    margin-top: 30px;
+    width: 100px;
+    position: absolute;
+}
+#pig:hover{
+    transform: scale(1.3) rotate(6deg);
+}
+
+#pigTitle{
+    font-family: "AvenirHeavy", sans-serif;
+    font-size: 18px;
+    margin-top: 30px;
+    margin-left: 30px;
+}
+#pigDescript{
+    font-family: "AvenirRoman", sans-serif;
+    font-size: 14px;
+    margin-top: 1vh;
+    margin-left: 30px;
+}
+
+.pigButtom{
+    transition: 0.2s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    background: var(--color-4);
+    margin-top: 1vh;
+    margin-left: 30px;
+    width: 110px;
+    height: 30px;
+}
+.pigButtom:hover{
+    background-color: var(--color-2);
+}
+
+#pigButtomText{
+    color: #ffffff;
+    font-family: "AvenirRoman", sans-serif;
+    font-size: 12px;
+}

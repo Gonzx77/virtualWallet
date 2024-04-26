@@ -322,12 +322,3 @@ body{
         width: 30%;
     }
 }
-@keyframes block {
-    0%{
-        margin-left: 80px;
-    }
-    100%{
-        margin-left: 200px;
-        display: none;
-    }
-}

@@ -24,11 +24,12 @@
 }
 
 .navigationBar{
+    z-index: +1;
     padding: 10px;
     display: grid;
     grid-template-columns: repeat(5,1fr);
     bottom: 0;
-    position: absolute;
+    position: fixed;
     background-color: var(--color-1);
     width: 100%;
     height: 10vh;
@@ -92,6 +93,12 @@
     color: var(--color-1);
     font-family: "AvenirHeavy", sans-serif;
     font-size: 26px;
+}
+#subtitle2{
+    color: var(--color-1);
+    font-family: "AvenirHeavy", sans-serif;
+    font-size: 26px;
+    margin-top: 2vh;
 }
 
 .pigCont{
@@ -173,4 +180,49 @@
     color: #ffffff;
     font-family: "AvenirRoman", sans-serif;
     font-size: 12px;
+}
+
+
+.cardsGallery{
+    display: flex;
+    overflow: hidden;
+    overflow-x: auto;
+    border: 1px solid red;
+    width: 90vw;
+    margin-top: 2vh;
+    padding: 20px;
+}
+.cardsGrid{
+    display: grid;
+    gap: 30px;
+    grid-template-columns: repeat(4, 1fr);
+}
+.card{
+    position: relative;
+    overflow: hidden;
+    border-radius: 20px;
+    width: 240px;
+    height: 360px;
+    margin-bottom: 200px;
+}
+.cardBg{
+    position: absolute;
+    width: 100%;
+}
+
+
+#c1{
+    background-color: var(--color-4);
+}
+
+#c2{
+    background-color: var(--color-3);
+}
+
+#c3{
+    background-color: var(--color-5);
+}
+
+#c4{
+    background-color: var(--color-6);
 }

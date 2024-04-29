@@ -296,7 +296,7 @@ body{
     display: grid;
     grid-template-columns: repeat(5,1fr);
     bottom: 0;
-    position: absolute;
+    position: fixed;
     background-color: var(--color-1);
     width: 100%;
     height: 10vh;

@@ -119,7 +119,19 @@
     display: flex;
     justify-content: center;
 }
-.pigC1:hover{
+.pigCont:hover{
+    #pigStar1{
+        opacity: 1;
+        transform: translate(70px, -40px) rotate(440deg);
+    }
+    #pigStar2{
+        opacity: 1;
+        transform: translate(-30px, -50px) rotate(-400deg);
+    }
+    #pigStar3{
+        opacity: 1;
+        transform: translate(230px, 30px) rotate(-530deg);
+    }
     #ellipse{
         transform: scale(2.8);
     }
@@ -131,6 +143,25 @@
 .pigC2{
     display: flex;
     flex-direction: column;
+}
+
+#pigStar1{
+    transition: 1s;
+    opacity: 0;
+    position: absolute;
+    margin-top: 60px;
+}
+#pigStar2{
+    transition: 1s;
+    opacity: 0;
+    position: absolute;
+    margin-top: 60px;
+}
+#pigStar3{
+    transition: 1s;
+    opacity: 0;
+    position: absolute;
+    margin-top: 60px;
 }
 
 #ellipse{

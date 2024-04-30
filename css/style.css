@@ -134,9 +134,7 @@ body{
     border-radius: 40px;
 }
 .bar1{
-    animation-name: barra1;
-    animation-duration: 2s;
-    animation-fill-mode: forwards;
+    animation: barra1 2s forwards, colors 6s infinite;
     position: absolute;
     width: 0%;
     background-color: var(--color-2);
@@ -333,5 +331,26 @@ body{
     }
     100%{
         width: 30%;
+    }
+}
+
+@keyframes colors {
+    0%{
+        background-color: var(--color-2);
+    }
+    20%{
+        background-color: #00ffee;
+    }
+    40%{
+        background-color: #3cff00;
+    }
+    60%{
+        background-color: #ffff00;
+    }
+    80%{
+        background-color: #8800ff;
+    }
+    100%{
+        background-color: var(--color-2);
     }
 }

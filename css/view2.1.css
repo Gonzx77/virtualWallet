@@ -166,8 +166,9 @@
 
 #graph{
     position: absolute;
-    width: 100%;
-    margin-top: 56vh;
+    width: 340px;
+    margin-left: calc((100% - 340px) / 2);
+    margin-top: 380px;
     padding-bottom: 30vh;
 }
 

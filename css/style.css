@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-@import url(variables.css);
-=======
 @import url(variables.css);
 
 @font-face {
@@ -357,4 +354,3 @@ body{
         background-color: var(--color-2);
     }
 }
->>>>>>> 7bfe417 (relace: :bookmark: Estilo CSS de "index.html" Completo)
